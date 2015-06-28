@@ -3,7 +3,7 @@ app.controller('homeController', function($scope, $http) {
 	$scope.loadingStatus = true;
 	$scope.testResult = {};
 
-	$http.get('http://api.amaportal/api/test')
+	$http.get('http://amaportalapi.besaba.com/api/test')
 		.success(function(data) {
 			$scope.testResult.status = true;
 			$scope.testResult.data = data;
