@@ -1,4 +1,10 @@
-app.controller('indexController', function($scope) {
+app.controller('indexController', function($scope, globalSettingsService) {
+
+	var extractSettings = function(data) {
+		$scope.settingsUrl = data.url;
+	};
+
+	globalSettingsService.show().success(extractSettings);
 
 	$scope.routes = {
 		home: '/docs/#/',
