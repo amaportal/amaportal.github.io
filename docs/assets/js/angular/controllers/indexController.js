@@ -9,7 +9,8 @@ app.controller('indexController', function($scope, globalSettingsService) {
 	$scope.routes = {
 		home: '/docs/#/',
 		gettingStarted: '/docs/#/getting-started',
-		clientKey: '/docs/#/client-key'
+		clientKey: '/docs/#/client-key',
+		openSource: '/docs/#/open-source'
 	};
 
 	$scope.red = "#F44336";

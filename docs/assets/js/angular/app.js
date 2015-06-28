@@ -14,6 +14,9 @@ app.config(function ($routeProvider) {
 	    .when("/client-key", {
 	    	templateUrl: "pages/client-key.html"
 	    })
+	    .when("/open-source", {
+	    	templateUrl: "pages/open-source.html"
+	    })
 	    .otherwise({ redirectTo: "/" });
  
 });
