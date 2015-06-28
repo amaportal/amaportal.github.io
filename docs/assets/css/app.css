@@ -1,0 +1,24 @@
+.text-light-primary {
+	color: #000;
+	opacity: 0.85;
+}
+.text-light-secondary {
+	color: #000;
+	opacity: 0.70;
+}
+
+.text-dark-primary {
+	color: #fff;
+}
+
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+
+.side-menu .active {
+	background-color: #9FA8DA;
+	color: #fff;
+}

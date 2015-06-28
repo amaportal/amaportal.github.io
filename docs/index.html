@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="portalAPI">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+
+	<!-- animations -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animations/spinner.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animations/fade.css">
+
+	<title>AMA Portal API</title>
+</head>
+
+<body ng-controller="indexController">
+
+	<div class="container">
+		<div class="jumbotron text-dark-primary" style="background-color: {{indigo}};">
+			<h2>AMA Portal API</h2>
+		</div>
+
+		<div>
+			
+			<!-- side menu -->
+			<div class="col-md-3">
+				<div class="col-sm-12">
+					<div><input type="text" class="form-control" placeholder="Search"></div>
+					<div><button class="btn btn-ms pull-right"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button></div>
+				</div>
+
+				<div class="col-sm-12">
+					<hr>
+				</div>
+
+				<div class="col-sm-12 side-menu" style="border-right: 1px solid gray">
+					<sidemenu-button routes="routes.home">Introduction</sidemenu-button>
+					<sidemenu-button routes="routes.gettingStarted">Getting Started</sidemenu-button>
+					<sidemenu-button routes="routes.clientKey">Client Key</sidemenu-button>
+				</div>
+			</div>
+
+			<!-- content -->
+			<div class="col-md-9" ng-view>
+
+			</div>
+
+		</div>
+	</div>
+
+	<script src="assets/js/angular/angular.min.js"></script>
+	<script src="assets/js/angular/angular-animate.min.js"></script>
+	<script src="assets/js/angular/angular-aria.min.js"></script>
+	<script src="assets/js/angular/angular-route.js"></script>
+
+	<script src="assets/js/angular/app.js"></script>
+
+	<!-- Angular Controller -->
+	<script src="assets/js/angular/controllers/homeController.js"></script>
+	<script src="assets/js/angular/controllers/indexController.js"></script>
+
+	<!-- Angular Directives -->
+	<script src="assets/js/angular/directives/sidemenu-button.js"></script>
+	<script src="assets/js/angular/directives/loading-display.js"></script>
+	<script src="assets/js/angular/directives/content-h.js"></script>
+	<script src="assets/js/angular/directives/content-b.js"></script>
+</body>
+</html>

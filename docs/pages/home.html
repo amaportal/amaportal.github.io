@@ -1,0 +1,51 @@
+<loading-display></loading-display>
+
+<content-h color="red">
+
+	Introduction
+
+</content-h>
+
+<content-b>
+
+	<div>
+		<p>
+			This is the AMA Davao Portal API Documentation page. Accessing this API is only applicable to students of AMA Davao that are trying to develop systems related to the institution for educational purposes.
+		</p> <br>
+
+		<p>
+			<strong>Students </strong> that wishes to access this API must approach any AMA Davao Portal Administrators for additional instructions and to have a personal <strong> Client Key </strong> that must be used when sending requests to the API.
+		</p> <br>
+	</div>
+
+	<div>
+		<strong>The following data is a result of API request.</strong> <br>
+		<div class="table-responsive" ng-if="testResult.status">
+			<table class="table table-bordered">
+				<tr>
+					<th>Title</th>
+					<td ng-bind="testResult.data.title"></td>
+				</tr>
+				<tr>
+					<th>Status</th>
+					<td ng-bind="testResult.data.status"></td>
+				</tr>
+				<tr>
+					<th>Response</th>
+					<td ng-bind="testResult.data.response"></td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				Original Json Output from the API
+			</div>
+
+			<div class="panel-body">
+				<span ng-bind="testResult.stringed"></span>
+			</div>
+		</div>
+	</div>
+
+</content-b>
