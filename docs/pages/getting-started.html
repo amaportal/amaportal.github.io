@@ -6,7 +6,22 @@
 
 <content-b>
 
-	<p>Before your application can make a request to the API, you must first acquire a <strong>Client Key</strong>. The key can be acquired 
-	<a href="/docs/#/client-key">here</a>.</p>
+	<p>
+		All requests to the API must be sent to <code>http://amaportalapi.besaba.com/api/</code>
+	</p> <br>
+
+	<p>
+		Currently, <code>GET</code> requests sent to the API do not need any security tokens attached. 
+		On the other hand, <code>POST</code> requests would require an <code>access_token</code> attached in every requests to ensure security and reliability. 
+		Your app may acquire this token upon your client's login through Oauth2 authentication. You may save the <code>access_token</code> in a PHP Session for later use.
+	</p> <br>
+
+	<p>
+		All reponse from the API will be in JSON format.
+	</p> <br>
+
+	<p>
+		On the left side is a menu containing the list of currently availabe API on this portal. Select an API to find out more information in using and accessing each one of them.
+	</p>
 
 </content-b>
