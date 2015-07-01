@@ -7,10 +7,22 @@ app.controller('indexController', function($scope, globalSettingsService) {
 	globalSettingsService.show().success(extractSettings);
 
 	$scope.routes = {
-		home: '/docs/#/',
-		gettingStarted: '/docs/#/getting-started',
-		clientKey: '/docs/#/client-key',
-		openSource: '/docs/#/open-source'
+		home: {
+			'url': '/docs/#/',
+			'title': 'Introduction'
+		},
+		gettingStarted: {
+			'url': '/docs/#/getting-started',
+			'title': 'Getting Started'
+		},
+		clientKey: {
+			'url': '/docs/#/client-key',
+			'title': 'Client Key'
+		},
+		openSource: {
+			'url': '/docs/#/open-source',
+			'title': 'Open Source'
+		}
 	};
 
 	$scope.red = "#F44336";

@@ -18,6 +18,9 @@
 	text-align: right;
 }
 
+.side-menu {
+	border-right: 1px solid gray
+}
 .side-menu .active {
 	background-color: #9FA8DA;
 	color: #fff;

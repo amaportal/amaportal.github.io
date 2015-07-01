@@ -24,27 +24,36 @@
 			
 			<!-- side menu -->
 			<div class="col-md-3">
-				<div class="col-sm-12">
+				<!-- <div class="col-sm-12">
 					<div><input type="text" class="form-control" placeholder="Search"></div>
 					<div><button class="btn btn-ms pull-right"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button></div>
 				</div>
 
 				<div class="col-sm-12">
 					<hr>
-				</div>
+				</div> -->
 
-				<div class="col-sm-12 side-menu" style="border-right: 1px solid gray">
-					<sidemenu-button routes="routes.home">Introduction</sidemenu-button>
-					<sidemenu-button routes="routes.gettingStarted">Getting Started</sidemenu-button>
-					<sidemenu-button routes="routes.clientKey">Client Key</sidemenu-button>
+				<div class="col-sm-12 side-menu">
+					<sidemenu-button routes="routes.home.url">Introduction</sidemenu-button>
+					<sidemenu-button routes="routes.gettingStarted.url">Getting Started</sidemenu-button>
+					<!-- <sidemenu-button routes="routes.clientKey.url">Client Key</sidemenu-button> -->
+					<sidemenu-button routes="routes.openSource.url">Open Source</sidemenu-button>
 				</div>
 
 				<div class="col-sm-12">
-					<hr>
+					<div>
+						<hr>
+					</div>
+
+					<div>
+						<strong><small>API</small></strong>
+					</div>
 				</div>
 
-				<div class="col-sm-12 side-menu" style="border-right: 1px solid gray">
-					<sidemenu-button routes="routes.openSource">Open Source</sidemenu-button>
+				<div class="col-sm-12 side-menu">
+					<sidemenu-button>Courses</sidemenu-button>
+					<sidemenu-button>Subjects</sidemenu-button>
+					<sidemenu-button>Schedules</sidemenu-button>
 				</div>
 			</div>
 
