@@ -17,6 +17,13 @@ app.config(function ($routeProvider) {
 	    .when("/open-source", {
 	    	templateUrl: "pages/open-source.html"
 	    })
+	    .when('/departments', {
+	    	controller: "departmentsAPIController",
+	    	templateUrl: "pages/api/departments.html"
+	    })
+	    .when('/programs', {
+	    	templateUrl: "pages/api/programs.html"
+	    })
 	    .otherwise({ redirectTo: "/" });
  
 });

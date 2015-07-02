@@ -1,0 +1,65 @@
+<content-h color="red">
+
+	<strong>API</strong> > Getting Started
+
+</content-h>
+
+<content-b>
+
+	<div>
+		<p>
+			The <code>departments API</code> is used to access the list of departments exisiting in AMA Davao.
+		</p> <br>
+		<p>
+			<strong>How To Use</strong> <br>
+			Select from the table below the <code>API Link</code> that you need to use for your application. Just add the <code>API Link</code> to the current API address provided <a href="/docs/#/getting-started">here</a>. <strong>ie</strong> http://linktoapi.com/api/departments.
+		</p>
+	</div>
+
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped">
+			<tr>
+				<th>API Link</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td colspan="2"><code>GET Requests</code></td>
+			</tr>
+			<tr>
+				<td><a href="" ng-click="gotoDepartments()">departments</a></td>
+				<td>
+					Get the list of all existing departments.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="" ng-click="gotoDepartmentsPaginate()">departments/results/<code>count</code></a></td>
+				<td>
+					Get the list of departments with pagination. Change the <code>count</code> value to the number of results you need per page.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="" ng-click="gotoDepartmentID()">departments/<code>id</code></a></td>
+				<td>
+					Get the department with an ID equal to the <code>id</code> value on the API link.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="" ng-click="gotoDepartmentPrograms()">departments/<code>id</code>/programs</a></td>
+				<td>
+					Get the list of Programs offered under the selected Department.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="" ng-click="gotoDepartmentProgramsPaginate()">departments/<code>id</code>/programs/results/<code>count</code></a></td>
+				<td>
+					Paginate the number of Programs under the selected Department. Limit the results per page to the <code>count</code> value.
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div>
+		<hr>
+	</div>
+
+</content-b>

@@ -22,6 +22,14 @@ app.controller('indexController', function($scope, globalSettingsService) {
 		openSource: {
 			'url': '/docs/#/open-source',
 			'title': 'Open Source'
+		},
+		departments: {
+			'url': '/docs/#/departments',
+			'title': 'API Departments'
+		},
+		programs: {
+			'url': '/docs/#/programs',
+			'title': 'API Programs'
 		}
 	};
 
